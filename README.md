@@ -24,11 +24,11 @@ The app reads json formatted graph data line by line from a plain text file. Eac
 }
 ```
 
-Note that the coordinate values will be ignored as they are read.
+Note that the coordinate values will be **ignored** as they are read.
 
 For simplicity, the output format is exactly the same as the input. After the app finishes running, new coordinate values will be inserted into each vertex (each line).
 
 ##Dependencies
-The app was developed and tested under hadoop 2.2 and giraph 1.1 . They are *not* included in the repository, please download them from their sites.
+The app was developed and tested under hadoop 2.2 and giraph 1.1 . They are **not** included in the repository, please download them from their sites.
 
-Apart from hadoop and giraph, this app uses Apache Common-Lang 2.5 for `Object.equals`, `Object.hashCode` and `Object.toString` implementations, Gson 2.2.4 for json parsing and Mockito 1.9.5 for unit testing. They are *included* in the repository.
+Apart from hadoop and giraph, this app uses Apache Common-Lang 2.5 for `Object.equals`, `Object.hashCode` and `Object.toString` implementations, Gson 2.2.4 for json parsing and Mockito 1.9.5 for unit testing. They are **included** in the repository.
