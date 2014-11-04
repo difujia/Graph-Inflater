@@ -2,6 +2,8 @@
 
 A Hadoop/Giraph app that layouts shape-unaware graph (vertices and edges).
 
+The layout algorithm is an implementation of the [Fruchterman Algorithm](ftp://132.180.22.143/axel/papers/reingold:graph_drawing_by_force_directed_placement.pdf) with some improvements including the concept of gravity and randomised initial layout.
+
 The app reads json formatted graph data line by line from a plain text file. Each line in the file represents a single vertex. The following sample data is indented for readability, but it should be written inline in the input file.
 
 ##Sample input format:
@@ -18,6 +20,7 @@ The app reads json formatted graph data line by line from a plain text file. Eac
     {"targetId":8,"weight":0.0}]
 }
 ``
+
 Note that the coordinate values will be ignored as they are read.
 
 For simplicity, the output format is exactly the same as the input. After the app finishes running, new coordinate values will be inserted into each vertex (each line).
