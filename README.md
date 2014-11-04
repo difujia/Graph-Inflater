@@ -4,7 +4,7 @@ A Hadoop/Giraph app that layouts shape-unaware graph (vertices and edges).
 
 The layout algorithm is an implementation of the Fruchterman Algorithm with some improvements including the concept of gravity and randomised initial layout.
 
-Original paper of the algorithm: ftp://132.180.22.143/axel/papers/reingold:graph_drawing_by_force_directed_placement.pdf
+>Original paper of the algorithm: ftp://132.180.22.143/axel/papers/reingold:graph_drawing_by_force_directed_placement.pdf
 
 The app reads json formatted graph data line by line from a plain text file. Each line in the file represents a single vertex. The following sample data is indented for readability, but it should be written inline in the input file.
 
