@@ -7,19 +7,20 @@ The layout algorithm is an implementation of the [Fruchterman Algorithm](ftp://1
 The app reads json formatted graph data line by line from a plain text file. Each line in the file represents a single vertex. The following sample data is indented for readability, but it should be written inline in the input file.
 
 ##Sample input format:
-``
-{ "id":1,
-    "values":{"coordinate":{"x":392.2290344238281,"y":-653.1674194335938,"z":0.0},"weight":0.0},
-    "edges":[
-        {"targetId":2,"weight":0.0},
-        {"targetId":3,"weight":0.0},
-        {"targetId":4,"weight":0.0},
-        {"targetId":5,"weight":0.0},
-        {"targetId":6,"weight":0.0},
-        {"targetId":7,"weight":0.0},
-        {"targetId":8,"weight":0.0}]
+
+```JSON
+{"id":1,
+	"values":{"coordinate":{"x":392.2290344238281,"y":-653.1674194335938,"z":0.0},"weight":0.0},
+	"edges":[
+		{"targetId":2,"weight":0.0},
+		{"targetId":3,"weight":0.0},
+		{"targetId":4,"weight":0.0},
+		{"targetId":5,"weight":0.0},
+		{"targetId":6,"weight":0.0},
+		{"targetId":7,"weight":0.0},
+		{"targetId":8,"weight":0.0}]
 }
-``
+```
 
 Note that the coordinate values will be ignored as they are read.
 
